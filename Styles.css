@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Inter:wght@400;500;600;700&family=Outfit:wght@300;400;600&family=Poppins:wght@400;700&family=Rubik:wght@300;400;500;600;700&display=swap');
+
+:root {
+--Soft-Blue: #8BACD9;
+--White: #FFFFFF;
+--Cyan: #00FFF8;
+--Dark-Blue-Main: #0D192C;
+--Dark-Blue-Card: #15263F;
+--Dark-Blue-Line: #2E405A;
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    background-color: var(--Dark-Blue-Main);
+    overflow-x: hidden;
+}
+
+.container{
+    max-width: 350px;
+    border-radius: 15px;
+    background-color: var(--Dark-Blue-Card);
+    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
+    margin-top: 152px;
+    margin-bottom: 152px;
+}
+
+.Card-Product-Img{
+    position: relative;
+    overflow: hidden;
+    width: 302px;
+    height: 302px;
+    margin: 24px 24px auto 24px;
+    border-radius: 8px;
+}
+
+.Mainimg{
+    width: 302px;
+    height: 302px;
+    border-radius: 8px;
+}
+
+.Card-Product-Img::after {
+    content: url(./images/Eye\ icon.svg);
+    background: var(--Cyan);
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.25s ease;
+}
+
+.Card-Product-Img:hover::after { opacity: 0.5; }
+
+
+.Heading{
+    width: 302px;
+    height: 28px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: var(--White);
+    margin: 24px 24px auto 24px;
+    cursor: pointer;
+}
+
+.Heading:hover{
+    color: var(--Cyan);
+}
+
+.Description{
+    width: 302px;
+    height: 52px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--Soft-Blue);
+    margin: 16px 24px auto 24px;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    gap: 112.15px;
+    margin: 24px 25px auto 24px;
+}
+
+
+.Ethereum{
+    display: flex;
+    align-items: center;
+    gap: 6.5px;
+}
+
+.EthImg{
+    width: 11px;
+    height: 16px;
+}
+
+.Wallet{
+    width: 75px;
+    height: 20px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20.16px;
+    color: var(--Cyan);
+}
+
+.Days{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.ClockImg{
+    width: 13.33px;
+    height: 13.33px;
+}
+
+.DaysLeft{
+    width: 73px;
+    height: 20px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20.16px;
+    color: var(--Soft-Blue);
+}
+
+.BreakLine{
+    width: 302px;
+    height: 1px;
+    background-color: var(--Dark-Blue-Line);
+    margin: 24px 24px auto 24px;
+}
+
+.User{
+    display: flex;
+    justify-content: center;
+    margin: 16px 96px 32px 24px;
+    gap: 16px;
+    width: 230px;
+    height: 33px;
+}
+
+.UserImg{
+    width: 33px;
+    height: 33px;
+    border: 1px solid white;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.Text{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.Text h3{
+   width: 81px;
+   height: 20px;
+   font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20.16px;
+    color: var(--Soft-Blue);
+}
+
+.Text h2{
+    width: 93px;
+    height: 20px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20.16px;
+    color: var(--White);
+    cursor: pointer;
+}
+
+.Text h2:hover{
+    color: var(--Cyan);
+}
